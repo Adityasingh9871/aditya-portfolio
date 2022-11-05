@@ -1,0 +1,141 @@
+.img1{
+  width: 30vw;
+  height: 17vw;
+  border-radius: 1rem;
+}
+
+
+.box2{
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.projheading{
+  margin-top: 3vh;
+  color: rgb(8, 8, 54);
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+
+}
+
+.intro{
+    margin-top: 1rem;
+}
+
+.learnmore{
+    color: rgb(0, 0, 0);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    
+}
+
+
+
+.modal{
+  font-size: 12px;
+  width: 60vw;
+  height: 70vh;
+  overflow: hidden;
+}
+
+
+
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
+
+.imgbox{
+  border: solid black;
+  background-color: white;
+  width: 50%;
+  height: 85%;
+  padding: 1rem;
+  position: absolute;
+  margin-left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(3,45vh);
+  gap: 10px;
+  overflow: hidden;
+}
+
+.gridbox:nth-child(2){
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  /* height: 50vh; */
+  background-color: rgb(31, 45, 57);
+}
+.gridbox:nth-child(1){
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-color: rgb(115, 142, 166);
+}
+
+.gridbox{
+  background-color: greenyellow;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.gridbox >img{
+  /* width: 23rem; */
+  max-width: 100%;
+  max-height: 50%;
+}
+
+.title{
+  /* border: solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 4rem;
+  position: absolute;
+  top: 2rem;
+  right: 4rem;
+  font-size: 3rem;
+  font-family: 'ROBOTO';
+  color: white;
+  -webkit-text-stroke: 1.5px rgb(0, 0, 0) ;
+}
+
+
+.descp{
+  /* border: solid black; */
+  width: 40%;
+  height: 70%;
+  position: absolute;
+  top: 7rem;
+  right: 1.5rem;
+}
+
+.imgcollage{
+  overflow: hidden;
+  width: 100%;
+
+}
+
+.text{
+  position: absolute;
+  bottom: 1rem;
+  left: 1.2rem;
+}
