@@ -15,7 +15,7 @@ export default function Projects(props) {
       <div className={styles.box1}>
         <div className={styles.box2}>
           
-          <Popup contentStyle={{width: '70vw',height:"80vh"}} trigger={<motion.img src={props.data.path1} className={styles.img1} whileHover={{scale: 1.2}}/>} modal>
+          <Popup contentStyle={{width: '70vw',height:"80vh"}} trigger={<motion.img src={props.data.path1} className={styles.img1} whileHover={{y:-10}}/>} modal>
                 {close => (
               <div className={styles.modal}>
 
@@ -23,7 +23,7 @@ export default function Projects(props) {
                 {/* <img className={styles.imgcollage} src={props.data.path1} /> */}
                 <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:.5}} whileHover={{width:1025}} className={styles.imgbox}>
                 <LazyLoadComponent> 
-                  <div className={styles.gridbox} style={{backgroundImage: `url(${props.data.path5})`,backgroundSize:"cover"}} ></div>
+                  <motion.div className={styles.gridbox} whileTap={{width:1000,zIndex:3}} style={{backgroundImage: `url(${props.data.path5})`,backgroundSize:"cover"}} ></motion.div>
                   <motion.div className={styles.gridbox} whileTap={{scale:1.3,y:44,x:-160,zIndex:3}} style={{backgroundImage: `url(${props.data.path2})`,backgroundSize:"cover"}}></motion.div>
                   <motion.div className={styles.gridbox} whileTap={{scale:2.7,y:-122,zIndex:3}} style={{backgroundImage: `url(${props.data.path3})`,backgroundSize:"cover"}}></motion.div>
                   <motion.div className={styles.gridbox} whileTap={{scale:2.7,y:-122,x:-330,zIndex:3}} style={{backgroundImage: `url(${props.data.path4})`,backgroundSize:"cover"}}></motion.div>

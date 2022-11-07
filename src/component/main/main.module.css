@@ -228,16 +228,33 @@ a:visited{
     transform: translateX(-50%);
 }
 .sbox2{
-    padding-top: 20px;
+    position: relative;
+    top: 10px;
+    padding-top: 10px;
     font-size: 3.5rem;
     width: fit-content;
+    height: fit-content;
     text-transform: capitalize;
-    font-family: 'ROBOTO';
+    font-family: 'Anonymous Pro', monospace;
     position: relative;
+    border-right: 1px solid black;
     left: 50%;
     transform: translateX(-50%);
     color: rgb(0, 0, 121);
+    overflow: hidden;
+    animation: typewriter 1.5s steps(44) 1s 1 normal both,blinkTextCursor 500ms steps(44) infinite normal;
 }
+
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: max-content;}       /* correction here */  
+  }
+
+
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(0, 0, 0,.75);}
+    to{border-right-color: transparent;}
+  }
 
 .sbox3{
     display: flex;
